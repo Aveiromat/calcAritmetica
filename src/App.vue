@@ -46,7 +46,7 @@ const resultado = ref('');
           <input v-model="numero1" @input="calcularResultado" type="text" placeholder="Digite aqui o primeiro número" class="form-control text-center">
         </div>
         <div class="col-md-1">
-          <select v-model="operacao" class="form-control text-center">
+          <select @change="calcularResultado" v-model="operacao" class="form-control text-center">
             <option value="soma"> + </option>
             <option value="subtracao"> - </option>
             <option value="multiplicacao"> x </option>

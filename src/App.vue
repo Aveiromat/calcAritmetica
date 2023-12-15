@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from 'vue';
 
-// import  Algarismos from './components/Algarismos.vue';
+// import Formulario from './components/Formulario.vue';
 // import Resultado from './components/Resultado.vue';
 
 import { ref } from 'vue';
@@ -39,7 +39,7 @@ const resultado = ref('');
   <div class="container d-flex flex-column vh-100 justify-content-center col-12">
     <h1 class="col-12 d-flex justify-content-center pb-3">Calculadora Aritmética</h1>
 
-    <!-- Formulário -->
+    <!-- Formulario -->
     <form @submit.prevent="calcularResultado">
       <div class="row">
         <div class="col">

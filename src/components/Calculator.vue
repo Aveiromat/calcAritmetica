@@ -5,7 +5,7 @@
     <form @submit.prevent="calcularResultado">
       <div class="row">
         <div class="col">
-          <input v-model="numero1" @input="calcularResultado" type="number" placeholder="Digite aqui o primeiro número" class="form-control text-center">
+          <input v-model="numero1" @input="calcularResultado" type="number" inputmode="numeric" placeholder="Digite aqui o primeiro número" class="form-control text-center">
         </div>
         <div class="col-md-1">
           <select @change="calcularResultado" v-model="operacao" class="form-control text-center">
@@ -16,7 +16,7 @@
           </select>
         </div>
         <div class="col">
-          <input v-model="numero2" @input="calcularResultado" type="number" placeholder="Digite aqui o segundo número" class="form-control text-center">
+          <input v-model="numero2" @input="calcularResultado" type="number" inputmode="numeric" placeholder="Digite aqui o segundo número" class="form-control text-center">
         </div>
       </div>
     </form>
